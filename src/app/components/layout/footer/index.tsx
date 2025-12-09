@@ -17,7 +17,8 @@ const Footer = () => {
           <div className="lg:col-span-6 sm:col-span-2">
             <img
               className="block h-12 mb-4"
-              src={getImagePath("/images/logo/logo.svg")}
+              src={"/images/logo/logo.svg"
+}
               alt="HelloChats Logo"
             />
 

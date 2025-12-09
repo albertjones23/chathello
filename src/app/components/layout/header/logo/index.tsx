@@ -8,7 +8,8 @@ const Logo: React.FC = () => {
       {/* Logo */}
       <div className="relative h-10 w-[40px]">
         <Image
-          src={getImagePath("/images/logo/logo.svg")}
+          src={"/images/logo/logo.svg"
+}
           alt="logo"
           fill
           className="object-contain"
