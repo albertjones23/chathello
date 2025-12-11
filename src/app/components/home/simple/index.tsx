@@ -19,12 +19,13 @@ const Simple = () => {
           </div>
 
           <div className="flex justify-center">
-            <Link
-              href={"/"}
-              className="text-xl font-semibold text-white py-4 px-6 lg:px-12 bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl cursor-pointer"
-            >
-              Download HelloChats
-            </Link>
+           <Link
+                    href="/hellochat.apk"
+                    download
+                    className="text-xl font-semibold text-white py-4 px-6 lg:px-12 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl mr-6 cursor-pointer"
+                  >
+                    Download Now
+                  </Link>
           </div>
         </div>
       </div>

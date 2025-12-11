@@ -63,18 +63,7 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <p className="text-white text-xl font-medium mb-9">Contact Us</p>
 
-            <Link
-              href={"tel:+989054371445"}
-              className="text-white/60 hover:text-primary text-sm font-normal mb-6 flex gap-2 w-fit"
-            >
-              <Image
-                src={getImagePath("/images/footer/number.svg")}
-                alt="phone-icon"
-                width={20}
-                height={20}
-              />
-              +98 905 437 1445
-            </Link>
+         
 
             <Link
               href={"mailto:support@hellochats.app"}
@@ -86,7 +75,7 @@ const Footer = () => {
                 width={20}
                 height={20}
               />
-              support@hellochats.app
+              support@hellochats.net
             </Link>
 
             <div className="text-white/60 text-sm font-normal mb-6 flex gap-2">
@@ -96,7 +85,7 @@ const Footer = () => {
                 width={20}
                 height={20}
               />
-              Tehran, Iran
+              Sofia, Bulgaria
             </div>
           </div>
         </div>

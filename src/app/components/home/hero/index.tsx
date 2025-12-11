@@ -2,6 +2,7 @@
 import { getImagePath } from "@/lib/utils/imagePath";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Banner = () => {
@@ -12,7 +13,6 @@ const Banner = () => {
 
   return (
     <section className="relative pb-0" id="home-section">
-      {/* Removed background image */}
       <div className="overflow-hidden">
         <div className="container lg:pt-20 pt-10 relative">
           <div className="relative z-10">
@@ -29,16 +29,23 @@ const Banner = () => {
                 </p>
 
                 <div className="flex align-middle justify-center lg:justify-start">
-                  <button className="text-xl font-semibold text-white py-4 px-6 lg:px-12 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl mr-6 cursor-pointer">
-                    Get Started
-                  </button>
 
+                  {/* GET STARTED (DOWNLOAD APK) */}
+                  <Link
+                    href="/hellochat.apk"
+                    download
+                    className="text-xl font-semibold text-white py-4 px-6 lg:px-12 bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary rounded-xl mr-6 cursor-pointer"
+                  >
+                    Download Now
+                  </Link>
+
+                  {/* HOW IT WORKS BUTTON */}
                   <button
                     onClick={openModal}
                     className="bg-transparent flex justify-center items-center text-white cursor-pointer"
                   >
                     <Image
-                      src={getImagePath("/images/banner/playbutton.svg")}
+                      src={getImagePath('/images/banner/playbutton.svg')}
                       alt="play"
                       className="mr-3"
                       width={47}
@@ -49,14 +56,10 @@ const Banner = () => {
                 </div>
               </div>
 
-              {/* REMOVED BANNER IMAGE SECTION */}
-              {/* This keeps only the text centered & clean */}
-
             </div>
           </div>
         </div>
       </div>
-
     </section>
   );
 };
